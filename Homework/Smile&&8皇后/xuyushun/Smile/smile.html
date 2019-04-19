@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<canvas id="myCanvas" width="640" height="480" style="border:3px solid #d3d3d3;">
+您的浏览器不支持 HTML5 canvas 标签。</canvas>
+
+<script>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+var c=document.getElementById("myCanvas");
+var smile=c.getContext("2d");
+origin();
+smile.beginPath();
+smile.arc(320,240,20,1*Math.PI,0*Math.PI,1);
+smile.stroke();
+function origin()
+{
+	ctx.fillStyle='yellow';
+	ctx.strokeStyle='black';
+	ctx.beginPath();
+	ctx.arc(320,240,200,0,2*Math.PI);
+	ctx.fill();
+	ctx.stroke();
+	ctx.fillStyle='white';
+	ctx.strokeStyle='black';
+	ctx.beginPath();
+	ctx.arc(270,175,30,0,2*Math.PI);
+	ctx.fill();
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(370,175,30,0,2*Math.PI);
+	ctx.fill();
+	ctx.stroke();
+	ctx.fillStyle='black';
+	ctx.strokeStyle='black';
+	ctx.beginPath();
+	ctx.arc(270,175,15,0,2*Math.PI);
+	ctx.fill();
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(370,175,15,0,2*Math.PI);
+	ctx.fill();
+	ctx.stroke();
+}
+function change()
+{
+	var i=1;
+var j=0;
+var num=5;
+var changeimage1=setInterval(function(){
+	i-=0.1;
+    j+=0.1;
+    num--;
+    ctx.clearRect(0,0,640,480);
+	origin();
+	smile.beginPath();
+    smile.arc(320,240,20,i*Math.PI,j*Math.PI,1);
+    smile.stroke();
+    console.log(i);
+    console.log(j);
+    if(num==0){
+        clearInterval(changeimage1);
+    	changeimage1=null;
+    	another();
+    }
+},300);
+var num2=5
+var m=-0.5;
+var n=-0.5;
+function another()
+{
+	var changeimage2=setInterval(function(){
+    ctx.clearRect(0,0,640,480);
+	origin();
+	smile.beginPath();
+    smile.arc(320,280,20,m*Math.PI,n*Math.PI,1);
+    smile.stroke();
+    m+=0.1;
+    n-=0.1;
+    num2--;
+    if(num2==0){
+    	clearInterval(changeimage2);
+    }
+	},300)
+}
+}
+</script> 
+<button onclick="change()">click here</button>
+</body>
+</html>

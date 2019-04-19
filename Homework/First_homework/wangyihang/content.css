@@ -1,0 +1,44 @@
+#content
+{
+	width: 68%;
+    height: 1806px;
+    background-color: #fdfcf8;
+    float:left;
+}
+
+
+
+#d1
+{
+	text-align: center;
+}
+
+div#content div.idea {
+    padding: 0;
+    padding-bottom: 30px;
+    min-height: 118px;
+    border-bottom: 1px solid #aaa;
+}
+
+div#content h3 {
+    margin-top: 35px;
+    margin-left: 110px;
+    font-size: 24px;
+}
+
+div#content h2 {
+    font-size: 24px;
+    color: #3f3f3f;
+    margin-top: 35px;
+}
+
+div#content p {
+    margin: 12px 0 0 0;
+    line-height: 150%;
+    font-size: 16px;
+}
+
+div.left
+{
+	float:left;
+}

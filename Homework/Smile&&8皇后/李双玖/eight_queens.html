@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eight queens</title>
+	<style type="text/css">
+		#main {
+			margin-left: 25%;
+			width: 50%;
+			height: 100%;
+			background-color: ;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="result" style="margin: 0 0 20px 0">
+		</div>
+		<div id="show">
+			
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var result = document.getElementById('result');
+	var show = document.getElementById('show');
+	var num = new Array(8);
+	for (var i=0; i<num.length; i++) {
+		num[i] = 0;
+	}
+
+	function check(length) {
+		for (var i = 0; i < length-1; i++) {
+		 	for (var j = i+1; j < length; j++) {
+		 	 	if (num[i] == num[j] || num[j]-num[i] == j-i || num[i]-num[j] == j-i) {
+		 	 		return false;
+		 	 	}
+		 	}
+		}
+		return true;
+	}
+
+	var account = 0;
+	function insert() {
+		account++;
+		var div = document.createElement('div');
+		var canvas = document.createElement("canvas");
+		var hr = document.createElement('hr');
+		show.appendChild(div);
+		div.innerHTML = "<div>第"+account+"种</div>";
+		div.appendChild(canvas);
+		div.appendChild(hr);
+
+    canvas.width = 400;
+    canvas.height = 400;
+    var ctx = canvas.getContext("2d");
+
+    /*加载图片，此功能有问题
+    for (var i = 0; i < num.length; i++) {
+			var imgObj = new Image();
+			imgObj.src = "queen.jpg";
+			imgObj.onload = function(){
+		    ctx.drawImage(imgObj, (50 + 1), (50 + 1), 45, 45);
+		  }
+		}*/
+  
+    // 画矩形
+    ctx.beginPath();
+		ctx.lineWidth="2";
+		ctx.strokeStyle="black";
+		ctx.rect(0,0,400,400); 
+
+		// 画横线
+		for (var i = 1; i <= 7; i++) {
+			ctx.moveTo(0, i*50);
+			ctx.lineTo(400, i*50);
+		}
+		// 画竖线
+		for (var i = 1; i <= 7; i++) {
+			ctx.moveTo(i*50, 0);
+			ctx.lineTo(i*50, 400);
+		}
+		ctx.stroke();
+
+		// 画圆
+		for (var i = 0; i < num.length; i++) {
+			ctx.beginPath();
+		  ctx.arc((50 * i + 25), (50 * (num[i]-1) + 25), 20, 0, 2*Math.PI);
+		  ctx.fillStyle="red";
+			ctx.fill();
+			ctx.stroke();
+		}
+	}
+
+	var i = 0; 
+	var flag = 0;
+
+	function fun(i) {
+		if (i == 8) {
+			flag++;
+			insert();
+			return;
+		}
+		for (num[i] = 1; num[i] <= 8; num[i]++) {
+			if (check(i+1)) {
+				fun(i+1);
+			}
+		}
+		return;
+	}
+
+	fun(0);
+	/*用循环模拟栈
+	while (1) {
+		if (i == 8) {
+			flag++;
+			insert();
+			i--;
+		}
+		num[i]++;
+		if (num[i] == 9) {
+			if (i == 0) break;
+			num[i] = 0;
+			i--;
+		}
+		else if (check(i+1)) {
+			i++;
+		}
+	}*/
+	result.innerHTML = "共"+flag+"种"+"<hr>";
+</script>
+</html>

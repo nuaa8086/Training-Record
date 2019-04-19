@@ -1,0 +1,132 @@
+<style>
+.head_1{
+width: 1210px;
+height: 1px;
+margin: 12px;
+}
+.head_2{
+height: 48px;
+width: 1210px;
+margin:0 0 0 12px;
+background: #C0C0C0;
+}
+.side1{
+	margin-left: 12px;
+	width: 180px;
+	float: left;
+	font-family:"georgia"
+}
+.middle{
+	float: left;
+	padding:30px 0 0 0;
+	width: 850px;
+
+}
+#middle_1{
+	text-align: center;
+}
+.cite_1{
+	padding-bottom: 30px;
+	min-height: 118px;
+}
+.include{
+margin:0 auto;
+width: 1239px;
+text-align: left;
+}
+.total{
+text-align: center;
+}
+.search{
+	width: 306px;
+	height: 100px;
+	float: right;
+}
+.form_1{
+	text-align: left;
+    margin-top: 25px;
+}
+.box{
+	margin-top: 35px;
+	width: 256px;
+	height: 28px; 
+}
+.button_1{
+	width: 80px;
+	height: 50px;
+	background: #C0C0C0;
+	font-size:15px;
+}
+.button_2{
+}
+
+.menu{
+	height: 48px;
+	width: 1210px;
+	position: relative;
+}
+.li2{
+	list-style: none;
+	position: relative;
+	text-align: left;
+}
+.sakata{
+	left: 100px;
+	width: 155px;
+	font-size: 35px;
+	position: absolute;
+	list-style: none;
+}
+.kagura{
+	left: 400px;
+	width: 157px;
+	font-size: 35px;
+	position: absolute;
+	list-style: none;
+}
+.xin{
+	left: 700px;
+	width: 167px;
+	font-size: 35px;
+	position: absolute;
+	list-style: none;
+}
+.spyair{
+	left: 1000px;
+	width: 158px;
+	font-size: 35px;
+	position: absolute;
+	list-style: none;
+}
+.right{
+float:right;
+width:180px;
+}
+.foot{
+clear:both;
+padding-top:16px;
+margin-left:12px;
+line-height:24px;
+}
+#eli{
+margin-left: 0;
+margin-bottom: 0; 
+width:300px;
+height: 400px;   
+}
+#dingchun{
+float:right;
+width:300px;
+height:400px;
+}
+.center{
+text.align:center;
+}
+.foot_center{
+width:400px;
+text-align:center;
+margin-left:400px;
+margin-right:310px;
+font-size:30px;
+}
+</style>

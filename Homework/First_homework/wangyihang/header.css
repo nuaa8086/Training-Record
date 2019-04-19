@@ -1,0 +1,98 @@
+
+#header
+{   
+    padding: 0;
+    border: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fdfcf8;
+}
+
+div#searchui {
+    margin: 0;
+    padding: 0;
+    width: 306px;
+    height: 100px;
+    background-color: transparent;
+    float: right;
+}
+#searchui input.button {
+    padding: 0;
+    margin: 0;
+    background: #AE4141;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+}
+#searchui input.box {
+    margin: 0;
+    margin-top: 35px;
+    width: 256px;
+    height: 28px;
+    background: #fdfdfd;
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+}
+
+#navfirst #menu a:hover
+{ 
+background-color:#333333;
+color: #FFFFFF;
+}
+
+div#navfirst{
+	padding-left: 20px;
+	padding-right: 23px;
+	clear:both;
+}
+
+ul#menu li, ul#menu a {
+    display: block;
+    line-height: 48px;
+    border-bottom: 0;
+    text-decoration: none;
+    color: #525252;
+    font-weight: bold;
+} 
+
+div#navfirst ul#menu {
+    height: 48px;
+    width: 100%;
+    background-color: #E8E7E3;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+div#navfirst ul#menu li{
+	float:left;text-align:center;}
+
+
+#h {
+    left: 0px;
+    width: 150px;
+}
+#b {
+    left: 150px;
+    width: 150px;
+}
+#s {
+    left: 300px;
+    width: 160px;
+}
+#d {
+    left: 460px;
+    width: 150px;
+}
+#x {
+    left: 610px;
+    width: 160px;
+}
+#ws {
+    left: 720px;
+    width: 180px;
+}
+#w {
+    left: 920px;
+    width: 170px;
+}

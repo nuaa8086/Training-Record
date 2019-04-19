@@ -1,0 +1,74 @@
+#wrapper
+{
+	height: 2000px;
+	margin: 0,0,0,0;   
+	padding: 0;
+    border: 0;
+    background-color: #fdfcf8;
+}
+
+
+div#menu1 a, div#menu2 a {
+    display: block;
+    padding: 5px 0 5px 15px;
+    font-size: 12px;
+    border-bottom: 0px solid #ddd;
+    text-decoration: none;
+    color: #000000;
+}
+#menu1 a:hover{ background-color:#c7c7c7;}
+#menu2 a:hover{ background-color:#cd3333;color: #FFFFFF;}
+
+div#menu2 a{color: #900b09;} 
+
+div#menu1 h2#link_about a, div#menu1 h2#link_help a {
+    display: inline;
+    padding: 0;
+    font-size: 14px;
+    border-bottom: 0px solid #ddd;
+    text-decoration: none;
+    color: #0479A7;
+}
+
+div#content a
+{
+    color: #900b09;
+    text-decoration: none;
+    border-bottom: 1px solid #900b09;
+}
+#menu1
+{  
+	margin-left: 20px;
+    width: 14%;
+    height: 1806px;
+    background-color: #fdfcf8;
+    float:left;
+    border: solid;
+    border-color: #E8E7E3;
+    border-top-color: #fdfcf8;
+}
+h2
+{
+	font-weight: bold;
+	font-size: 14px;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: 微软雅黑;
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 5px 10px;
+    border-bottom: 0px solid rgb(221, 221, 221);
+   }
+
+li{ list-style-type:none}
+
+#menu2
+{
+	margin-right: 20px;
+	width: 14%;
+    height: 1806px;
+    background-color: #fdfcf8;
+    float:left;
+    border: solid;
+    border-color: #E8E7E3;
+    border-top-color: #fdfcf8;
+}
